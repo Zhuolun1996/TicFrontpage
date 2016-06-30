@@ -5,9 +5,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>2016腾讯俱乐部招新报名</title>
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/queries.css">
+<link rel="stylesheet" href="css/etline-font.css">
+<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
 <form action="RegistControl" name=form>
+<center>
 <table>
 	<tr>
 		<td>姓名</td>
@@ -49,13 +60,17 @@
 		<td><input type="text" name="message" /></td>
 	</tr>	
 </table>
+</center>
+<center>
 <table>
 <tr>
 	<td><Input type="submit" name="submit" value="提交"></td>
 </tr>
 </table>
+</center>
 </form>
 <form action="helpShowRegisters" method="post" name="form">
+<center>
 <table>
 <tr>
 	<td>显示所有用户</td>
@@ -63,6 +78,7 @@
 	<td><Input type="submit" value="显示" name="submit"></td>
 </tr>
 </table>
+</center>
 </form>
 </body>
 </html>
