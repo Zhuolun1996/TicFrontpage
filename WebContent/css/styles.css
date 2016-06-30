@@ -500,7 +500,7 @@ Features-stack
     background: url("../img/act1.jpg") no-repeat center center;
     position: absolute;
     left: 350px;
-    bottom: 150px;
+    bottom: 0px;
     z-index: 2; }
   .features .device-showcase {
     position: absolute;
