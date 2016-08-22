@@ -1,84 +1,58 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>2016腾讯俱乐部招新报名</title>
-<link rel="stylesheet" href="css/normalize.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/flexslider.css">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/queries.css">
-<link rel="stylesheet" href="css/etline-font.css">
-<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<link rel="stylesheet" href="css/reset4login.css">
+<link rel="stylesheet" href="css/supersized4login.css">
+<link rel="stylesheet" href="css/style4login.css">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
 <body>
+<div class="page-container">
+<h1>报名</h1>
 <form action="RegistControl" name=form>
-<center>
-<table>
-	<tr>
-		<td>姓名</td>
-		<td><input type="text" name="name" /></td>
-	</tr>
-	<tr>
-		<td>学号</td>
-		<td><input type="text" name="number" /></td>
-	</tr>
-	<tr>
-		<td>学院</td>
-		<td><input type="text" name="ascription" /></td>
-	</tr>
-	<tr>
-		<td>专业</td>
-		<td><input type="text" name="major" /></td>
-	</tr>
-	<tr>
-		<td>性别</td>
-		<td><input type="radio" name="sex" value="男">男
-			<input type="radio" name="sex" value="女">女</td>
-	</tr>
-	<tr>
-		<td>电话</td>
-		<td><input type="text" name="phone" /></td>
-	</tr>
-	<tr>
-		<td>邮箱</td>
-		<td><input type="text" name="email" /></td>
-	</tr>
-	<tr>
-		<td>参加部门</td>
-		<td><input type="checkbox" name="apartment" value="综合技术部">综合技术部
-			<input type="checkbox" name="apartment" value="媒体宣传部">媒体宣传部
-			<input type="checkbox" name="apartment" value="策划运营部">策划运营部</td>
-	</tr>
-	<tr>
-		<td>个人简介</td>
-		<td><input type="text" name="message" /></td>
-	</tr>	
-</table>
-</center>
-<center>
-<table>
-<tr>
-	<td><Input type="submit" name="submit" value="提交"></td>
-</tr>
-</table>
-</center>
+<input type="text" name="name" class="username" placeholder="姓名">
+<input type="text" name="number" class="username" placeholder="学号"/>
+<input type="text" name="ascription" class="username" placeholder="学院"/>
+<input type="text" name="major" class="username" placeholder="专业" />
+
+<div style="float: left;width: 60px;height: 42px;text-align:center;line-height:80px">男</div>
+<div style="float:left; width: 60px;height: 42px;"><input type="radio" name="sex" value="男" class="radioclass" ></div>
+<div style="float: left;width: 60px;height: 42px;text-align:center;line-height:80px">女</div>
+<div style="float:left; width: 60px;height: 42px;"><input type="radio" name="sex" value="女" class="radioclass"></div>
+                
+                
+<input type="text" name="phone" class="username" placeholder="电话" />
+<input type="text" name="email" class="username" placeholder="邮箱" />
+
+<div style="float: left;width: 135px;height: 42px;text-align:center;line-height:80px">综合技术部
+</div>
+<div style="float:left; clear:right;width: 100px;height: 42px;"><input type="checkbox" name="apartment" value="综合技术部" class="checkclass"></div>
+<div style="float:left;width: 135px;height: 42px;text-align:center;line-height:80px">媒体宣传部</div>
+<div style="float:left; clear:right;width: 100px;height: 42px;"><input type="checkbox" name="apartment" value="媒体宣传部" class="checkclass"></div>
+<div style="float:left;width: 135px;height: 42px;text-align:center;line-height:80px">策划运营部</div>
+<div style="float:left;clear:right;width: 100px;height: 42px;"><input type="checkbox" name="apartment" value="策划运营部" class="checkclass"></div>
+                
+<input type="text" name="message" class="selfintroduction" placeholder="个人简介" />
+
+<button type="submit">提交</button>
+<div class="error"><span>+</span></div>
+
 </form>
+</div>
 <form action="helpShowRegisters" method="post" name="form">
-<center>
-<table>
-<tr>
-	<td>显示所有用户</td>
-	<td><Input type="hidden" value="1" name="showPageNum"></td>
-	<td><Input type="submit" value="显示" name="submit"></td>
-</tr>
-</table>
-</center>
+	<Input type="hidden" value="1" name="showPageNum"></td>
+	<Input type="submit" value="显示" name="submit"></td>
 </form>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized-init.js"></script>
+<script src="js/scripts4login.js"></script>
 </body>
 </html>

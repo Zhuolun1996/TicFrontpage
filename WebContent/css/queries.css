@@ -197,10 +197,15 @@
 	}
 
 	.features .device-showcase,
-	.features-extra .dreamhcak-wrap {
-		display: none;
+	.features .dreamhcak-wrap {
+		 display:none;
 	}
 
+	.features-extra .device-showcase,
+	.features-extra .dreamhcak-wrap {
+		 display:none;
+	}
+	
 	.features .responsive-feature-img,
 	.features-extra .responsive-feature-img {
 		display: block;
