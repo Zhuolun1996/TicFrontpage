@@ -16,7 +16,7 @@
 <body>
 <div class="page-container">
 <h1>报名</h1>
-<form action="RegistControl" name=form method="post">
+<form action="RegistControl" name=form>
 <input type="text" name="name" class="username" placeholder="姓名">
                 <input type="text" name="number" class="username" placeholder="学号"/>
                 <input type="text" name="ascription" class="username" placeholder="学院"/>
