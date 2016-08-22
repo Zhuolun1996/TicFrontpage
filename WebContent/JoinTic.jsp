@@ -46,10 +46,7 @@
 
 </form>
 </div>
-<form action="helpShowRegisters" method="post" name="form">
-	<Input type="hidden" value="1" name="showPageNum"></td>
-	<Input type="submit" value="显示" name="submit"></td>
-</form>
+
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/supersized.3.2.7.min.js"></script>
 <script src="js/supersized-init.js"></script>
