@@ -647,9 +647,9 @@ Features-stack
     border-radius: 50%;
     border: solid 3px #fff;
     background-color: #fff; }
-    .testimonial-slider .avatar img {
+	.testimonial-slider .avatar img {
       width: 82px;
-      height: auto; }
+      height: auto;}
   .testimonial-slider h2 {
     color: #fff;
     font-size: 40px;
