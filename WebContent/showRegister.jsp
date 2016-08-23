@@ -9,6 +9,7 @@
 <title>注册信息</title>
 </head>
 <body>
+<center>
 <br><jsp:getProperty name="register" property="backNews"/>
 <table>
 <tr>
@@ -46,5 +47,6 @@
 	<td><jsp:getProperty property="message" name="register"/></td>
 </tr>
 </table>
+</center>
 </body>
 </html>
