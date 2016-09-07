@@ -24,11 +24,11 @@
 <br>点击“上一页”，“下一页”查看信息
 <table>
 <tr>
-	<td><form action="helpShowStudents" method="post">
+	<td><form action="helpShowRegisters" method="post">
 		<Input type="hidden" name="showPageNum" value="<%=showpage.getShowPageNum()-1 %>">
 		<Input type="submit" name="submit" value="上一页">
 	</form></td>
-	<td><form action="helpShowStudents" method="post">
+	<td><form action="helpShowRegisters" method="post">
 		<Input type="hidden" name="showPageNum" value="<%=showpage.getShowPageNum()+1 %>">
 		<Input type="submit" name="submit" value="下一页">
 	</form></td>
