@@ -8,6 +8,25 @@
 <link rel="stylesheet" href="css/reset4login.css">
 <link rel="stylesheet" href="css/supersized4login.css">
 <link rel="stylesheet" href="css/style4login.css">
+<script type="text/javascript"> 
+var checksubmitflg = false; 
+function checksubmit() {
+	if (checksubmitflg == true) {
+		alert("请不要重读提交\n需要重复提交报名表的同学请刷新页面重试");
+		return false;
+	} 
+	checksubmitflg = true; 
+	return true; 
+	} 
+	document.ondblclick = function docondblclick() {
+		window.event.returnvalue = false; 
+	} 
+	document.onclick = function doconclick() {
+	if (checksubmitflg) {
+		window.event.returnvalue = false; 
+	} 
+	}
+</script> 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,7 +35,7 @@
 <body>
 <div class="page-container">
 <h1>报名</h1>
-<form action="RegistControl" name=form>
+<form action="RegistControl" name=form onsubmit="return checksubmit();">
 <input type="text" name="name" class="username" placeholder="姓名">
                 <input type="text" name="number" class="username" placeholder="学号"/>
                 <input type="text" name="ascription" class="username" placeholder="学院"/>
